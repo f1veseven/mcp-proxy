@@ -1,7 +1,7 @@
 plugins {
-    kotlin("jvm") version "2.1.20"
-    kotlin("plugin.serialization") version "2.1.20"
-    id("io.ktor.plugin") version "3.1.1"
+    kotlin("jvm") version "2.1.21"
+    kotlin("plugin.serialization") version "2.1.21"
+    id("io.ktor.plugin") version "3.1.3"
 }
 
 group = "net.portswigger"
@@ -16,13 +16,13 @@ repositories {
 }
 
 dependencies {
-    implementation("io.modelcontextprotocol:kotlin-sdk:0.4.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
+    implementation("io.modelcontextprotocol:kotlin-sdk:0.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
     implementation("org.slf4j:slf4j-simple:2.0.17")
 
     testImplementation(kotlin("test"))
-    testImplementation("io.ktor:ktor-serialization-jackson:3.1.1")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1")
+    testImplementation("io.ktor:ktor-serialization-jackson:3.1.3")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2")
 }
 
 tasks.test {
